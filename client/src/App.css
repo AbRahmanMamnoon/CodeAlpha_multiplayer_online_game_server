@@ -1,0 +1,125 @@
+/* Centering container with modern styling */
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f5f7; /* Light background for better contrast */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Play Button with hover effect */
+.playOnline {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #ffffff;
+  background-color: #2d89e5; /* Primary color */
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.playOnline:hover {
+  background-color: #2371c6; /* Darker shade on hover */
+  transform: translateY(-2px);
+}
+
+/* Background styling */
+.water-background {
+  background-color: #f4f5f7; /* Softer, neutral background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading with modern font size and alignment */
+.game-heading {
+  font-size: 2.5rem;
+  color: #2d89e5;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Responsive grid layout for the game squares */
+.square-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Modern display of move detection panel */
+.move-detection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Finished state message with style */
+.finished-state {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2d89e5;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Left and Right sections with smooth, rounded design */
+.left,
+.right {
+  height: 40px;
+  width: 130px;
+  background-color: #4b495f;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px;
+}
+
+/* Waiting message overlay with centered alignment */
+.waiting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #555;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Current move indicators with modern colors */
+.current-move-cross {
+  background-color: #3fa7f0 !important;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.current-move-circle {
+  background-color: #dd7f9f !important;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
